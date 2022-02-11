@@ -56,3 +56,8 @@ section.foto{
     text-align: center;
     padding: 10px;
 }
+.video{
+    display: block;
+    margin: auto;
+    padding: 30px;
+}
