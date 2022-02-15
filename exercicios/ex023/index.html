@@ -11,10 +11,17 @@
         }
         table{
             border-collapse: collapse;
+            width: 400px;
+            height: 400px;
         }
         td{
             border: 1px solid black;
             padding: 5px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        td.numero{
+            text-align: right;
         }
         table.dois{
             border-collapse: collapse;
@@ -26,6 +33,32 @@
         table.dois > td{
             border: 2px solid black;
         }
+
+
+        table#times{
+            margin-top: 50px;
+            width: 300px;
+            height: 300px;
+            border-collapse: separate;
+        }
+        #times td{
+            text-align: left;
+            vertical-align: middle;
+
+        }
+        .palmeiras{
+            background-color: rgb(8, 83, 8);
+        }
+        .flamengo{
+            background-color: brown;
+        }
+        .galo{
+            background-color: gray;
+        }
+        .timao{
+            background-image: linear-gradient(to right, rgb(24, 23, 23), white);
+        }
+        
     </style>
 </head>
 <body>
@@ -40,17 +73,17 @@
         <tr> <!-- primeira linha-->
             <td>A1</td> <!--dados-->
             <td>B1</td>
-            <td>C1</td>
+            <td class="numero">300</td>
         </tr>
         <tr> <!--segunda linha-->
             <td>A2</td>
             <td>B2</td>
-            <td>C2</td>
+            <td class="numero">400</td>
         </tr>
         <tr> <!-- terceira linha-->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">500</td>
         </tr>
         <tr>
             <td>A4</td>
@@ -80,6 +113,35 @@
             <td>58</td>
             <td>Feminino</td>
         </tr>
+    </table>
+    <table id="times">
+        <tr>
+            <td>Nome</td>
+            <td>Apelido</td>
+            <td>Localização</td>
+        </tr>
+        <tr> 
+            <td class="palmeiras">Palmeiras</td>
+            <td class="palmeiras">Verdão</td>
+            <td class="palmeiras">São Paulo</td>
+        </tr>
+        <tr>
+            <td class="flamengo">Flamengo</td>
+            <td class="flamengo">Mengão</td>
+            <td class="flamengo">Rio de Janeiro</td>
+        </tr>
+        <tr>
+            <td class="galo">Atlético Mineiro</td>
+            <td class="galo">Galo</td>
+            <td class="galo">Minas Gerais</td>
+        </tr>
+        <tr>
+            <td class="timao">Corinthians</td>
+            <td class="timao">Timão</td>
+            <td class="timao">São Paulo</td>
+        </tr>
+
+        
     </table>
 </body>
 </html>
