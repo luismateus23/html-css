@@ -13,6 +13,12 @@
             border-collapse: collapse;
             width: 500px;
         }
+        caption{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 5px;
+            font-size: 1.em;
+            font-weight: bold;
+        }
         th, td{
             border: 1px solid black;
             padding: 10px;
@@ -23,6 +29,9 @@
         }
         .num{
             text-align: right;
+        }
+        tbody tr:nth-child(odd){
+           background-color: darkcyan; 
         }
     </style>
 </head>
@@ -36,6 +45,7 @@
 
             <!--Anatomia para tabelas grandes
             TABLE
+                CAPTION É O TÍTULO DA TABELA
                 THEAD
                     TR,TD,TH
                 TBODY
@@ -44,10 +54,11 @@
                     TR,TD,TH
             /TABLE-->
             <table>
+                <caption>População das unidades federativas</caption>
                 <thead>
                     <tr>
-                        <th>Estado</th>
-                        <th>População</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">População</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -66,7 +77,7 @@
                 </tbody>
                 <tfoot>
                         <tr>
-                            <th>Total de habitantes</th>
+                            <th scope="row">Total de habitantes</th>
                             <td class="num"><strong>85 524 404</strong></td>
                         </tr>
                 </tfoot>
